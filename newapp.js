@@ -208,9 +208,10 @@ function countTime() {
   ctx.fillStyle = "red";
   if (game_state == 1) {
     ctx.fillText("", 50, 100);
+    ctx.fillText("score: "+String(score), 50, 50);
   } else if (game_state == 0) {
-    ctx.fillText(String(ctime), 50, 100);
-    ctx.fillText(String(score), 100, 500);
+    ctx.fillText("time: "+String(ctime), 0, 100);
+    ctx.fillText("score: "+String(score), 0, 50);
   } else if (game_state == 2) {
     ctx.font = "bold 30px 'ＭＳ Ｐゴシック'";
     ctx.lineWidth = 10;

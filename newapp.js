@@ -210,6 +210,7 @@ function countTime() {
     ctx.fillText("", 50, 100);
   } else if (game_state == 0) {
     ctx.fillText(String(ctime), 50, 100);
+    ctx.fillText(String(score), 100, 500);
   } else if (game_state == 2) {
     ctx.font = "bold 30px 'ＭＳ Ｐゴシック'";
     ctx.lineWidth = 10;
